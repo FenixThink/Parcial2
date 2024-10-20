@@ -18,8 +18,6 @@ class Conexion {
         $this->conexion = new mysqli($this->host, $this->user, $this->pass, $this->database);
         if ($this->conexion->connect_error) {
             die("Error de conexión: " . $this->conexion->connect_error);
-        }else{
-            echo "Conexión exitosa";
         }
 
     }
