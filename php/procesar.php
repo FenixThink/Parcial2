@@ -22,6 +22,18 @@ $result = $conexion->ejecutarSQL($sql);
 
 if ($conexion->ObtenerColumnasAfectadas() > 0) {
     echo "Registro insertado";
+    echo "<br>";
+    echo "<br>";
+    echo "<a href='mostrar.php'>Mostrar</a>";
+    echo "<br>";
+    echo "<br>";
+    echo "<a href='../index.html'>Actualizar un registro</a>";
+    echo "<br>";
+    echo "<br>";
+    echo "<a href='../html'>Borrar un registro</a>";
+    echo "<br>";
+    echo "<br>";
+    echo "<a href='../index.html'>Volver</a>";
 }else{
     echo "Error al insertar";
 }
